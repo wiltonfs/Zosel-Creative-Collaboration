@@ -1,0 +1,53 @@
+.portfolio-div {
+  /* You can remove flexbox rules since .grid-container handles layout */
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-spacer {
+  display: none; /* no longer needed with grid layout */
+}
+
+.portfolio-item {
+  width: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolio-div img,
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolio-button {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.portfolio-button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 220px); /* fixed width columns */
+  column-gap: 30px;  /* fixed horizontal spacing */
+  row-gap: 50px;     /* fixed vertical spacing */
+  padding: 20px;
+  justify-content: center;  /* center the whole grid */
+}
+
